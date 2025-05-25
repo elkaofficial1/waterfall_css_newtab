@@ -46,8 +46,8 @@ and uncomment those lines :
 - Andreas Grafen (original cascade theme) (https://andreas.grafen.info)
 - Clément Rambaud (mods on the original file for a mouse-centered use)
 
-#install New_tab
-install [new-tab-override] [https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/]
+## install New_tab
+install new-tab-override https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/
 ‎
 ## License
 
