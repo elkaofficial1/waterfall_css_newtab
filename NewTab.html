@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>New Tab</title>
+<style>
+  /* Общие стили */
+  body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      45deg,
+      #0d0d0d,
+      #1a1a1a,
+      #0d0d0d
+    );
+    background-size: 600% 600%;
+    animation: gradientShift 15s ease infinite;
+    color: #ffffff;
+  }
+
+  @keyframes gradientShift {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+  /* Надпись Waterfall */
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+/* Стиль для формы поиска */
+.search-form {
+  display: flex;
+}
+
+/* Минималистичное поле поиска без скруглений и тени */
+.search-input {
+  padding: 12px 15px;
+  
+  font-size: 1.2em;
+  
+  border: none; /* без рамки */
+  
+  outline: none; /* убрать синий контур при фокусе */
+  
+  width:300px; /* ширина по умолчанию */
+  
+   background-color:#222; /* фон внутри поля */
+   
+   color:#fff; /* цвет текста */
+
+   transition:.3s all ease; 
+}
+
+/* placeholder стиль */
+.search-input::placeholder {
+ color:#888; 
+}
+
+/* при фокусе — чуть светлее фон и изменение тени (по желанию) */
+.search-input:hover,
+.search-input:focus {
+ background-color:#333; 
+}
+
+/* Стиль кнопки — минималистичная без закруглений, без тени, с простым фоном */
+.search-button {
+ padding:12px;
+ margin-left:-1px; /* чтобы соединить с полем без зазора */
+ border:none; 
+ background-color:#555; 
+ color:#fff; 
+ font-size:.9em; 
+
+ cursor:pointer;
+
+ transition:.3s all ease;
+
+/* убираем скругления и тень для минимализма */
+}
+
+.search-button:hover {
+ background-color:#777; 
+}
+
+@media(max-width:600px){
+ h1{
+   font-size:2em; 
+ }
+ .search-input{
+   width:auto; 
+ }
+}	
+</style>
+</head>
+<body>
+
+<h1>Waterfall</h1>
+
+<form class="search-form" action="https://duckduckgo.com/" method="GET" target="_blank">
+ <input class="search-input" type="text" name="q" placeholder="Поиск DuckDuckGo" required />
+ <button class="search-button" type="submit">💨</button>
+</form>
+
+<script>
+ // Можно добавить дополнительные скрипты при необходимости
+</script>
+
+</body>
+</html>
